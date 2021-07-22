@@ -1,0 +1,33 @@
+.as-section {
+  padding: 4rem 0 3rem;
+
+  @media screen and (min-width: 768px) {
+      padding-top: 5rem;
+    }
+
+
+  &-white {
+    background-color: var(--body-color);
+  }
+
+  &-soft {
+    background-color: var(--container-color);
+  }
+
+  &__title,
+  &__description {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    display: block;
+    font-size: clamp(0.875rem, 5vw, 1rem);
+    font-weight: 500;
+    margin-bottom: 3rem
+  }
+}

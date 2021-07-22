@@ -1,0 +1,13 @@
+.as-button {
+  display: inline-block;
+  background-color: var(--main-color);
+  font-size: clamp(0.875rem, 5vw, 1rem);
+  color: var(--text-main);
+  padding: .75rem 2rem;
+  border-radius: 32px;
+  transition: .3s;
+
+  &:hover {
+    background-color: var(--main-color-dark);
+  }
+}

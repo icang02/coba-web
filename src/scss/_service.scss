@@ -1,0 +1,27 @@
+.as-service {
+  &__container {
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__img {
+    width: 64px;
+    height: 64px;
+    fill: var(--main-color);
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    padding: 0 1.5rem;
+  }
+}

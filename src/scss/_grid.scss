@@ -1,0 +1,43 @@
+.as-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+
+  &__card {
+    background-color: var(--body-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+
+    &-wrapper {
+      padding: 1rem;
+    }
+  }
+
+  &__image {
+    border-radius: 0.5rem 0.5rem 0 0;
+    max-width: 100%;
+  }
+
+  &__title {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+    letter-spacing: -0.02em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: clamp(0.75rem, 5vw, 0.875rem);
+    letter-spacing: 0.005em;
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    @extend .as-button;
+
+    &-wrapper {
+      margin-top: 24px;
+      margin-bottom: 28px;
+    }
+  }
+}

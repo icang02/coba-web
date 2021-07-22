@@ -1,0 +1,51 @@
+.as-footer {
+  background: url("/src/img/pattern.webp"), var(--main-color-dark);
+  background-position: center;
+  background-repeat: repeat-x;
+
+  @media screen and (min-width: 576px) {
+    background-repeat: round;
+  }
+
+  &__container {
+    align-items: center;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+
+    @media screen and (min-width: 576px) {
+      gap: 0.875rem;
+    }
+  }
+
+  &__title {
+    color: var(--text-main);
+    display: block;
+    font-size: clamp(0.875rem, 5vw, 1rem);
+    margin: .25rem 0 1.5rem;
+  }
+
+  &__social {
+    color: var(--text-main);
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+    margin-right: 1rem;
+  }
+
+  &__link {
+    color: var(--text-main);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      color: var(--text-color-light);
+    }
+  }
+
+  &__copy {
+    color: var(--text-main);
+    text-align: center;
+    font-size: clamp(0.75rem, 5vw, 0.875rem);
+    margin-top: 3.5rem;
+  }
+}
